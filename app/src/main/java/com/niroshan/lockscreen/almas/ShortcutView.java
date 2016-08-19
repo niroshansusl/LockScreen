@@ -56,7 +56,6 @@ public class ShortcutView extends LinearLayout {
             } catch (NameNotFoundException e) {
                 // TODO Auto-generated catch block
                 e.printStackTrace();
-
             }
 
             try {
@@ -87,15 +86,12 @@ public class ShortcutView extends LinearLayout {
                         Intent LaunchIntent = context.getPackageManager().getLaunchIntentForPackage(sv);
                         context.startActivity(LaunchIntent);
 
-
                     } else {
 
                         save("pkg", "true");
                         Intent x = new Intent(getContext(), PinActivity.class);
                         x.putExtra("sv", sv);
                         context.startActivity(x);
-
-
                     }
                 }
             });

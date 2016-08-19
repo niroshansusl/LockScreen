@@ -9,7 +9,7 @@ import android.view.View;
 import android.view.animation.TranslateAnimation;
 import android.widget.FrameLayout;
 
-class PanelSwitcher extends FrameLayout {
+ public class PanelSwitcher extends FrameLayout {
    private static final int MAJOR_MOVE = 60;
    private static final int ANIM_DURATION = 400;
 

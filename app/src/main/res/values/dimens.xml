@@ -1,0 +1,10 @@
+<resources>
+
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="niro_hsvHeight">240dp</dimen>
+    <dimen name="niro_hsvWidth">240dp</dimen>
+    <dimen name="niro_hueWidth">30dp</dimen>
+    <dimen name="niro_spacer">8dp</dimen>
+
+</resources>

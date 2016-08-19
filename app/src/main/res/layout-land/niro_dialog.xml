@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:id="@+id/ambilwarna_viewContainer"
+    android:paddingTop="@dimen/niro_spacer"
+    android:paddingRight="@dimen/niro_spacer"
+    android:paddingBottom="0dp"
+    android:paddingLeft="@dimen/niro_spacer"
+    android:clipToPadding="false"
+    android:layout_gravity="center"
+    >
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/niro_state"
+        android:orientation="vertical"
+        android:paddingRight="@dimen/niro_spacer"
+        android:gravity="center"
+        android:layout_centerVertical="true"
+        >
+        <FrameLayout
+            android:layout_width="60dp"
+            android:layout_height="30dp">
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:background="@drawable/niro_alphacheckered_tiled" />
+
+            <View
+                android:id="@+id/niro_oldColor"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:background="#faa" />
+        </FrameLayout>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/niro_arrow_down"
+            android:paddingTop="@dimen/niro_spacer"
+            android:paddingBottom="@dimen/niro_spacer"
+            />
+        <FrameLayout
+            android:layout_width="60dp"
+            android:layout_height="30dp">
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:background="@drawable/niro_alphacheckered_tiled" />
+
+            <View
+                android:id="@+id/niro_newColor"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:background="#aaf" />
+        </FrameLayout>
+    </LinearLayout>
+    <com.niroshan.lockscreen.dialog.NiroSquare
+        android:id="@+id/niro_viewSatBri"
+        android:layout_width="@dimen/niro_hsvWidth"
+        android:layout_height="@dimen/niro_hsvHeight"
+        android:layout_toRightOf="@id/niro_state"
+        android:layerType="software"
+        />
+    <!-- needed because i can't get parent keeping its bottom layout
+    and its wrap_content height. This view will serve as a bottom spacer. -->
+    <View
+        android:layout_width="@dimen/niro_spacer"
+        android:layout_height="@dimen/niro_spacer"
+        android:layout_below="@id/niro_viewSatBri"
+        />
+    <ImageView
+        android:id="@+id/niro_viewHue"
+        android:layout_width="@dimen/niro_hueWidth"
+        android:layout_height="@dimen/niro_hsvHeight"
+        android:layout_toRightOf="@id/niro_viewSatBri"
+        android:layout_marginLeft="@dimen/niro_spacer"
+        android:src="@drawable/niro_hue"
+        android:scaleType="fitXY"
+        />
+
+    <ImageView
+        android:id="@+id/niro_alphaCheckered"
+        android:layout_width="@dimen/niro_hueWidth"
+        android:layout_height="@dimen/niro_hsvHeight"
+        android:layout_marginLeft="@dimen/niro_spacer"
+        android:layout_toRightOf="@id/niro_viewHue"
+        android:scaleType="fitXY"
+        android:src="@drawable/niro_alphacheckered_tiled" />
+
+    <View
+        android:id="@+id/niro_overlay"
+        android:layout_width="@dimen/niro_hueWidth"
+        android:layout_height="@dimen/niro_hsvHeight"
+        android:layout_marginLeft="@dimen/niro_spacer"
+        android:layout_toRightOf="@id/niro_viewHue" />
+
+    <ImageView
+        android:id="@+id/niro_cursor"
+        android:layout_width="9dp"
+        android:layout_height="9dp"
+        android:src="@drawable/niro_cursor"
+        android:scaleType="matrix"
+        />
+
+    <ImageView
+        android:id="@+id/niro_alphaCursor"
+        android:layout_width="9dp"
+        android:layout_height="9dp"
+        android:scaleType="matrix"
+        android:src="@drawable/niro_cursor" />
+
+    <ImageView
+        android:id="@+id/niro_target"
+        android:layout_width="15dp"
+        android:layout_height="15dp"
+        android:src="@drawable/niro_target"
+        android:scaleType="matrix"
+        />
+
+
+</RelativeLayout>

@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ambilwarna_dialogView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center" >
+
+    <RelativeLayout
+        android:id="@+id/niro_viewContainer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:clipToPadding="false"
+        android:paddingBottom="@dimen/niro_spacer"
+        android:paddingLeft="@dimen/niro_spacer"
+        android:paddingRight="@dimen/niro_spacer"
+        android:paddingTop="@dimen/niro_spacer" >
+
+        <com.niroshan.lockscreen.dialog.NiroSquare
+            android:id="@+id/niro_viewSatBri"
+            android:layout_width="@dimen/niro_hsvWidth"
+            android:layout_height="@dimen/niro_hsvHeight"
+            android:layerType="software" />
+
+        <ImageView
+            android:id="@+id/niro_viewHue"
+            android:layout_width="@dimen/niro_hueWidth"
+            android:layout_height="@dimen/niro_hsvHeight"
+            android:layout_marginLeft="@dimen/niro_spacer"
+            android:layout_toRightOf="@id/niro_viewSatBri"
+            android:scaleType="fitXY"
+            android:src="@drawable/niro_hue" />
+
+        <ImageView
+            android:id="@+id/niro_alphaCheckered"
+            android:layout_width="@dimen/niro_hueWidth"
+            android:layout_height="@dimen/niro_hsvHeight"
+            android:layout_marginLeft="@dimen/niro_spacer"
+            android:layout_toRightOf="@id/niro_viewHue"
+            android:scaleType="fitXY"
+            android:src="@drawable/niro_alphacheckered_tiled" />
+
+        <View
+            android:id="@+id/niro_overlay"
+            android:layout_width="@dimen/niro_hueWidth"
+            android:layout_height="@dimen/niro_hsvHeight"
+            android:layout_marginLeft="@dimen/niro_spacer"
+            android:layout_toRightOf="@id/niro_viewHue" />
+
+        <ImageView
+            android:id="@+id/niro_cursor"
+            android:layout_width="9dp"
+            android:layout_height="9dp"
+            android:scaleType="matrix"
+            android:src="@drawable/niro_cursor" />
+
+        <ImageView
+            android:id="@+id/niro_alphaCursor"
+            android:layout_width="9dp"
+            android:layout_height="9dp"
+            android:scaleType="matrix"
+            android:src="@drawable/niro_cursor" />
+
+        <ImageView
+            android:id="@+id/niro_target"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:scaleType="matrix"
+            android:src="@drawable/niro_target" />
+
+        <LinearLayout
+            android:id="@+id/niro_state"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/niro_viewSatBri"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/niro_spacer"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <FrameLayout
+                android:layout_width="60dp"
+                android:layout_height="30dp" >
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:background="@drawable/niro_alphacheckered_tiled" />
+
+                <View
+                    android:id="@+id/niro_oldColor"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:background="#faa" />
+            </FrameLayout>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/niro_spacer"
+                android:paddingRight="@dimen/niro_spacer"
+                android:src="@drawable/niro_arrow_right" />
+
+            <FrameLayout
+                android:layout_width="60dp"
+                android:layout_height="30dp" >
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:background="@drawable/niro_alphacheckered_tiled" />
+
+                <View
+                    android:id="@+id/niro_newColor"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:background="#aaf" />
+            </FrameLayout>
+        </LinearLayout>
+    </RelativeLayout>
+
+</FrameLayout>

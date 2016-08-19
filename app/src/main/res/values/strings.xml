@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Locker</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="title_activity_lock">Lock</string>
+    <string name="title_activity_help">Help</string>
+    <string name="device_admin">Locker Device Admin</string>
+    <string name="device_admin_description">This is used to get access to some special permissions in device, for example turn off screen.</string>
+    <string name="admin_explanation">after enabling user will be able to use all the special features in Pi locker.</string>
+    <string name="description">Welcome to locker!\n\nThis is a detailed guide to the features and everything about the app.\n\nMain Features: \n- iOS8-like pin security\n- Cyanogenmod lockscreen
+        gestures\n- Galaxy Touchwiz shortcuts\n- Galaxy Touchwiz personal text\n- Colorable lockscreen\n- Emergengy unlock
+        \n- Changable background\n- Battery percentage\n- Get Missed Calls\n- Get Wifi/Bluetooth State\n- Own Statusbar\n- And even more...\n\nNote : To get the shortcuts,swipe the clock text to left.
+        \n\nGestures Guide:\n\nGestures are the key feature of this app, to use them you need to know what are the built-in functions in the gestures system.\nWe offer now 9 gestures:\n\n1.Unlock:\nTo
+        unlock draw a check sign on the screen like this \'✓\'\n\n2.Browser:\nTo launch you defult browser draw an \'X\' sign\n\n3.Camera:\nTo start camera app Draw letter \'C\'\n\n4.
+        Torch:\nTo toggle phone torch(if found) draw a \'t\' sign.\n\n5.Bluetooth:\nTo toggle bluetooth draw letter \'b\'.\n\n6.Wi-Fi:\nTo toggle wifi draw a \'W\'.
+        \n\n7.General sound mode:\nTo change audio to general draw a \'G\'.\n\n8.Silent mode:\nTo toggle to silent mode draw a \'S\'.\n\n9.Vibration mode:\nTo toggle to
+        vobration mode draw a \'V\'.\n\n\n"</string>
+    <string name="about">About</string>
+    <string name="title_activity_pin">MainActivity</string>
+    <string name="title_activity_pattern">Pattern</string>
+    <string name="general">  General</string>
+    <string name="misc">Miscellaneous</string>
+    <string name="security">Security</string>
+    <string name="settings">Settings</string>
+    <string name="toggle_pilocker">Toggle PiLocker</string>
+    <string name="seu">Secret Emergency unlock</string>
+    <string name="skip_gestures_on_security">Skip gestures on security</string>
+    <string name="double_tap_to_sleep">Double tap to sleep</string>
+    <string name="lock_now">"  Lock Now"</string>
+    <string name="_set_password">"  Set Password"</string>
+    <string name="set_pincode">"  Set Pincode"</string>
+    <string name="reset_pin_password">"  Reset Pin"</string>
+    <string name="hide">Hide</string>
+    <string name="show">Show</string>
+    <string name="_set_background">"  Set Background"</string>
+    <string name="_set_lockscreen_text">"  Set Lockscreen text"</string>
+    <string name="_set_theme_color">"  Set Theme Color"</string>
+    <string name="_about_pi_locker">"  About Locker"</string>
+    <string name="_about_pi_developers">"  About Developers"</string>
+    <string name="_donaate_to_pi_developers">"  Donate to Developers"</string>
+    <string name="blur">Add Blur to Lockscreen</string>
+    <string name="_help">"  Help"</string>
+    <string name="_sdcard_pilocker_wallpaper_png">/pilocker_wallpaper.PNG</string>
+    <string name="invisible_gestures">Invisible Gestures</string>
+    <string name="_shortcut">"  Shortcut"</string>
+
+</resources>

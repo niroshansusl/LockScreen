@@ -48,7 +48,7 @@
         android:layout_alignParentTop="true"
         android:layout_marginTop="32dp"
         android:gravity="center"
-        android:text="Pi Logs"
+        android:text="Logs"
         android:textAppearance="?android:attr/textAppearanceLarge"
         android:textSize="40sp" />
 

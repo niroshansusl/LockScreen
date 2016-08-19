@@ -129,7 +129,7 @@
         android:layout_alignBaseline="@+id/b2"
         android:layout_alignBottom="@+id/b2"
         android:layout_marginLeft="23dp"
-             android:layout_marginRight="20dp"
+        android:layout_marginRight="20dp"
         android:layout_toRightOf="@+id/b2"
         android:background="@drawable/selector"
         android:fontFamily="sans-serif-thin"

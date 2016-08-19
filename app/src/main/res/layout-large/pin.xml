@@ -3,7 +3,7 @@
     android:id="@+id/activityRoot"
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
-    android:background="#59000000" >
+    android:background="#59000000">
 
     <Button
         android:id="@+id/b5"
@@ -74,7 +74,7 @@
         android:gravity="center_horizontal|center_vertical"
         android:inputType="numberPassword"
         android:textColor="#ffffff"
-        android:textSize="45sp" >
+        android:textSize="45sp">
 
         <requestFocus />
     </EditText>
@@ -113,7 +113,7 @@
         android:layout_alignParentLeft="true"
         android:layout_below="@+id/pin"
         android:layout_marginLeft="23dp"
-          android:layout_marginRight="20dp"
+        android:layout_marginRight="20dp"
         android:layout_marginTop="33dp"
         android:background="@drawable/selector"
         android:fontFamily="sans-serif-thin"
@@ -129,7 +129,7 @@
         android:layout_alignBaseline="@+id/b2"
         android:layout_alignBottom="@+id/b2"
         android:layout_marginLeft="23dp"
-             android:layout_marginRight="20dp"
+        android:layout_marginRight="20dp"
         android:layout_toRightOf="@+id/b2"
         android:background="@drawable/selector"
         android:fontFamily="sans-serif-thin"

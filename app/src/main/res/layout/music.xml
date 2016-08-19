@@ -20,7 +20,7 @@
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="28dp"
-        android:text="Pi Music"
+        android:text="Music"
         android:textAppearance="?android:attr/textAppearanceLarge"
         android:textSize="40sp" />
 

@@ -3,7 +3,7 @@
     android:id="@+id/activityRoot"
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
-    android:background="#59000000" >
+    android:background="#59000000">
 
     <Button
         android:id="@+id/b5"
@@ -13,12 +13,11 @@
         android:layout_alignBottom="@+id/b4"
         android:layout_alignRight="@+id/b2"
         android:background="@drawable/selector"
+        android:fontFamily="sans-serif-thin"
         android:gravity="center_horizontal|center_vertical"
         android:text="5"
         android:textColor="#ffffff"
-        android:textSize="45sp"
-                          android:fontFamily="sans-serif-thin"
-/>
+        android:textSize="45sp" />
 
     <Button
         android:id="@+id/b6"
@@ -75,7 +74,7 @@
         android:inputType="numberPassword"
         android:textColor="#ffffff"
         android:textSize="50sp"
-        android:textStyle="bold" >
+        android:textStyle="bold">
 
         <requestFocus />
     </EditText>

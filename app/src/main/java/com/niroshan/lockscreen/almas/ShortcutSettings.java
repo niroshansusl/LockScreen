@@ -25,14 +25,7 @@ public class ShortcutSettings extends ActionBarActivity {
     @Override
     protected void onCreate(Bundle b) {
         super.onCreate(b);
-
-        actionBar = getSupportActionBar();
-        actionBar.setBackgroundDrawable(new ColorDrawable(0xff00BCD4));
-        actionBar.setDisplayShowTitleEnabled(false);
-        actionBar.setDisplayShowTitleEnabled(true);
-        actionBar.setTitle(Html
-                .fromHtml("<font color='#ffffff'> <b> Shortcut </b> </font>"));
-        actionBar.setDisplayHomeAsUpEnabled(true);
+        initActionBar();
 
         mContent = new LinearLayout(this);
         mContent.setOrientation(LinearLayout.VERTICAL);
@@ -101,6 +94,17 @@ public class ShortcutSettings extends ActionBarActivity {
 
         }
 
+    }
+
+    private void initActionBar() {
+        actionBar = getSupportActionBar();
+        actionBar.setBackgroundDrawable(new ColorDrawable(0xff00BCD4));
+        actionBar.setDisplayShowTitleEnabled(false);
+        actionBar.setDisplayShowTitleEnabled(true);
+        actionBar.setBackgroundDrawable(new ColorDrawable(Color.DKGRAY));
+        actionBar.setTitle(Html
+                .fromHtml("<font color='#ffffff'> <b> Shortcut </b> </font>"));
+        actionBar.setDisplayHomeAsUpEnabled(true);
     }
 
 }

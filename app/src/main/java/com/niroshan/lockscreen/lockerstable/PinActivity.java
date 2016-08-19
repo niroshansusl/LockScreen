@@ -50,13 +50,10 @@ public class PinActivity extends Activity {
     @SuppressLint({"HandlerLeak", "SimpleDateFormat"})
     @Override
     protected void onCreate(Bundle savedInstanceState) {
-
         super.onCreate(savedInstanceState);
-
         stopService(new Intent(PinActivity.this, LockerService.class));
 
         loadlock();
-
 
         window = getWindow();
         window.addFlags(WindowManager.LayoutParams.FLAG_SHOW_WHEN_LOCKED);

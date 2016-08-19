@@ -9,14 +9,14 @@
     <string name="device_admin">Locker Device Admin</string>
     <string name="device_admin_description">This is used to get access to some special permissions in device, for example turn off screen.</string>
     <string name="admin_explanation">after enabling user will be able to use all the special features in Pi locker.</string>
-    <string name="description">Welcome to locker!\n\nThis is a detailed guide to the features and everything about the app.\n\nMain Features: \n- iOS8-like pin security\n- Cyanogenmod lockscreen
+    <string name="description">Welcome to locker!\n\nThis is a detailed guide to the features and everything about the app.\n\nMain Features: \n- pin security\n- lockscreen
         gestures\n- Galaxy Touchwiz shortcuts\n- Galaxy Touchwiz personal text\n- Colorable lockscreen\n- Emergengy unlock
-        \n- Changable background\n- Battery percentage\n- Get Missed Calls\n- Get Wifi/Bluetooth State\n- Own Statusbar\n- And even more...\n\nNote : To get the shortcuts,swipe the clock text to left.
+        \n- Changable background\n- Battery percentage\n- Get Missed Calls\n- Get Wifi/Bluetooth State\n- Own Statusbar \n\nNote : To get the shortcuts,swipe the clock text to left.
         \n\nGestures Guide:\n\nGestures are the key feature of this app, to use them you need to know what are the built-in functions in the gestures system.\nWe offer now 9 gestures:\n\n1.Unlock:\nTo
         unlock draw a check sign on the screen like this \'✓\'\n\n2.Browser:\nTo launch you defult browser draw an \'X\' sign\n\n3.Camera:\nTo start camera app Draw letter \'C\'\n\n4.
         Torch:\nTo toggle phone torch(if found) draw a \'t\' sign.\n\n5.Bluetooth:\nTo toggle bluetooth draw letter \'b\'.\n\n6.Wi-Fi:\nTo toggle wifi draw a \'W\'.
         \n\n7.General sound mode:\nTo change audio to general draw a \'G\'.\n\n8.Silent mode:\nTo toggle to silent mode draw a \'S\'.\n\n9.Vibration mode:\nTo toggle to
-        vobration mode draw a \'V\'.\n\n\n"</string>
+        vibration mode draw a \'V\'.\n\n\n"</string>
     <string name="about">About</string>
     <string name="title_activity_pin">MainActivity</string>
     <string name="title_activity_pattern">Pattern</string>

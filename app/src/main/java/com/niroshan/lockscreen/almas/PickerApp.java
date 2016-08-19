@@ -60,16 +60,8 @@ public class PickerApp extends ActionBarActivity {
 
     @Override
     protected void onCreate(Bundle RainOfNiro) {
-
         super.onCreate(RainOfNiro);
-
-
-        actionbar = getSupportActionBar();
-        actionbar.setBackgroundDrawable(new ColorDrawable(0xff00BCD4));
-        actionbar.setDisplayShowTitleEnabled(false);
-        actionbar.setDisplayShowTitleEnabled(true);
-        actionbar.setTitle(Html.fromHtml("<font color='#ffffff'> <b> Choose an app </b> </font>"));
-        actionbar.setDisplayHomeAsUpEnabled(true);
+        initActionBar();
 
         mContent = new LinearLayout(this);
         mContent.setOrientation(LinearLayout.VERTICAL);
@@ -147,6 +139,16 @@ public class PickerApp extends ActionBarActivity {
             });
             mContent.addView(pa);
         }
+    }
+
+    private void initActionBar() {
+        actionbar = getSupportActionBar();
+        actionbar.setBackgroundDrawable(new ColorDrawable(0xff00BCD4));
+        actionbar.setDisplayShowTitleEnabled(false);
+        actionbar.setDisplayShowTitleEnabled(true);
+        actionbar.setBackgroundDrawable(new ColorDrawable(Color.DKGRAY));
+        actionbar.setTitle(Html.fromHtml("<font color='#ffffff'> <b> Choose an app </b> </font>"));
+        actionbar.setDisplayHomeAsUpEnabled(true);
     }
 
     public void save(String key, String value) {
